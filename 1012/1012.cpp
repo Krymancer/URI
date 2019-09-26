@@ -1,23 +1,15 @@
-#include <iostream>
 #include <stdio.h>
 
 using namespace std;
 
 int main(){
     float a,b,c;
-    float pi = 3.14159;
-    
-    cin >> a;
-    cin >> b;
-    cin >> c;
-    
+    scanf("%f %f %f",&a,&b,&c);
     printf("TRIANGULO: %.3f\n", (a*c)/2);
-    printf("CIRCULO: %.3f\n", pi*c*c);
-    printf("TRAPEZIO: %.3f\n", ((a+b)*c)/2);
+    printf("CIRCULO: %.3f\n", 3.14159*c*c);
+    printf("TRAPEZIO: %.3f\n", ((a+b)/2*c));
     printf("QUADRADO: %.3f\n", b*b);
     printf("RETANGULO: %.3f\n", a*b);
     
     return 0;
 }
-    
-    
